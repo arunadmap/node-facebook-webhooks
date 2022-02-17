@@ -1,7 +1,24 @@
 {
-  "name": "node-starter",
+  "name": "starter",
   "version": "0.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "install": "^0.13.0"
+  },
+  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-5tydvn)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunadmap/node-facebook-webhooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunadmap/node-facebook-webhooks/issues"
+  },
+  "homepage": "https://github.com/arunadmap/node-facebook-webhooks#readme"
 }

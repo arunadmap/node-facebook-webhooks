@@ -1,9 +1,11 @@
-'use strict';
+const express = require('express')
+const app = express()
+const port = 3000
 
-const
-  express = require('express'),
-  bodyParser = require('body-parser'),
-  app = express().use(bodyParser.json());
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-
-app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
