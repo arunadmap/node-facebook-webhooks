@@ -1,3 +1,9 @@
-// run `node index.js` in the terminal
+'use strict';
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const
+  express = require('express'),
+  bodyParser = require('body-parser'),
+  app = express().use(bodyParser.json());
+
+
+app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
