@@ -1,24 +1,31 @@
 {
-  "name": "starter",
-  "version": "0.0.0",
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
-    "express": "^4.17.3",
-    "install": "^0.13.0"
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
   },
-  "description": "[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-5tydvn)",
-  "main": "index.js",
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arunadmap/node-facebook-webhooks.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/arunadmap/node-facebook-webhooks/issues"
-  },
-  "homepage": "https://github.com/arunadmap/node-facebook-webhooks#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
