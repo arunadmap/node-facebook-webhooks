@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 express().use(express.static(path.join(__dirname, 'public')))
 express().set('views', path.join(__dirname, 'views'))
 express().set('view engine', 'ejs')
-express().listen(PORT, () => console.log(`Listening on ${PORT}`))
+
 // GET route to register the callback URL with Facebook.
 express().get('/webhook', (req, res) => {
   const VERIFY_TOKEN = "random string"
@@ -40,3 +40,5 @@ express().post('/webhook', (req, res) => {
     console.error(error);
   }
 })
+
+express().listen(PORT, () => console.log(`Listening on ${PORT}`))
